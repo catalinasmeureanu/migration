@@ -18,7 +18,7 @@ pid_file="/tmp/vault2.pid"
 EOF
 
 vault server -config=config-raft.hcl  > vault2.log 2>&1 &
-
+sleep 1
 export VAULT_ADDR='http://127.0.0.1:8210'
 
 echo $(cat data.json | jq -r '.unseal_keys_b64[0]')| xargs -I % vault operator unseal %
