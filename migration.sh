@@ -60,3 +60,5 @@ storage_destination "raft" {
 }
 cluster_addr="http://127.0.0.1:8201"
 EOF
+
+mkdir data
