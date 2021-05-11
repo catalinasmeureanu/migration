@@ -51,6 +51,6 @@ Success! All of the keys have been migrated.
 
 - run script to start and unseal the vault server with raft:
 
-`$ chmod postmigration.sh`
+`$ chmod +x postmigration.sh`
 
 `$./postmigration.sh`
